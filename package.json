@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@hapi/joi": "17.1",
+    "aws-sdk": "^2.1359.0",
+    "i": "^0.3.7",
+    "npm": "^9.6.4"
+  },
+  "name": "api-validation",
+  "description": "<!-- title: 'AWS NodeJS Example' description: 'This template demonstrates how to deploy a NodeJS function running on AWS Lambda using the traditional Serverless Framework.' layout: Doc framework: v3 platform: AWS language: nodeJS priority: 1 authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "invoke-local": "IS_OFFLINE=true sls invoke local -f hero-insert --path mocks/heroes.insert.json",
+    "invoke-local-trigger": "IS_OFFLINE=true sls invoke local -f hero-trigger --path mocks/heroes.trigger.json",
+    "invoke": "sls invoke -f hero-insert --path mocks/heroes.insert.json",
+    "log-trigger": "sls logs -f hero-trigger",
+    "log-insert": "sls logs -f hero-insert",
+    "deploy": "sls deploy",
+    "remove": "sls remove"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

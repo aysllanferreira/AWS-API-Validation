@@ -1,0 +1,28 @@
+{
+  "Records": [
+    {
+      "eventID": "e016ca554ff90d71d117a363fbba9464",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1681760335,
+        "Keys": {
+          "name": { "S": "Batman" },
+          "id": { "S": "b7f6cf96-9599-48d6-9edf-a04d5856acbe" }
+        },
+        "NewImage": {
+          "createdAt": { "S": "2023-04-17T19:38:55.694Z" },
+          "name": { "S": "Batman" },
+          "id": { "S": "b7f6cf96-9599-48d6-9edf-a04d5856acbe" },
+          "power": { "S": "Rich" }
+        },
+        "SequenceNumber": "200000000006434064284",
+        "SizeBytes": 138,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:692113348096:table/Heroes/stream/2023-04-17T19:28:00.532"
+    }
+  ]
+}
